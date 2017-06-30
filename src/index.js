@@ -1,9 +1,4 @@
 $.ready(function(error) {
-    if (error) {
-        console.log(error);
-        return;
-    }
-
     var gyro = $('#gyro');
     var motor = $('#dcmotor');
     var enc = $('#encoder');
@@ -67,14 +62,12 @@ $.ready(function(error) {
             if (pwmDuty >= 1) {
                 pwmDuty = 1;
             }
-            console.log(pwmDuty);
             motor.forwardRotateB(pwmDuty);
             motor.backwardRotateA(pwmDuty);
         } else {
             if (pwmDuty <= -1) {
                 pwmDuty = -1;
             }
-            console.log(pwmDuty);
             motor.backwardRotateB(-pwmDuty);
             motor.forwardRotateA(-pwmDuty);
         }
