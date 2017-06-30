@@ -1,0 +1,117 @@
+{
+    "devices": [
+        {
+            "id": "dcmotor",
+            "model": "tb6612fng",
+            "driver": "tb6612fng",
+            "inputs": {
+                "vcc-1": {
+                    "type": "power",
+                    "args": {
+                        "voltage": "5v"
+                    }
+                },
+                "vcc-2": {
+                    "type": "power",
+                    "args": {
+                        "voltage": "5v"
+                    }
+                },
+                "vcc-3": {
+                    "type": "power",
+                    "args": {
+                        "voltage": "5v"
+                    }
+                },
+                "gnd-1": {
+                    "type": "ground"
+                },
+                "gnd-2": {
+                    "type": "ground"
+                },
+                "gnd-3": {
+                    "type": "ground"
+                },
+                "pwm-A": {
+                    "type": "pwm",
+                    "args": {
+                        "frequency": 1000
+                    }
+                },
+                "gpio-A1": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out",
+                        "level": "low"
+                    }
+                },
+                "gpio-A2": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out",
+                        "level": "low"
+                    }
+                },
+                "pwm-B": {
+                    "type": "pwm",
+                    "args": {
+                        "frequency": 1000
+                    }
+                },
+                "gpio-B1": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out",
+                        "level": "low"
+                    }
+                },
+                "gpio-B2": {
+                    "type": "gpio",
+                    "args": {
+                        "direction": "out",
+                        "level": "low"
+                    }
+                }
+            }
+        },
+        {
+            "id": "encoder",
+            "model": "mg513-30",
+            "driver": "mg513-30",
+            "args": {
+                "ppr": 390
+            },
+            "inputs": {
+                "vcc": {
+                    "type": "power",
+                    "args": {
+                        "voltage": "5v"
+                    }
+                },
+                "gnd": {
+                    "type": "ground"
+                },
+                "qei": {
+                    "type": "qei"
+                }
+            }
+        },
+        {
+            "id": "gyro",
+            "model": "gy-521",
+            "driver": "gy-521",
+            "args": {
+                "accelRange": 2,
+                "gyroRange": 250
+            },
+            "inputs": {
+                "i2c": {
+                    "type": "i2c",
+                    "args": {
+                        "address": 104
+                    }
+                }
+            }
+        }
+    ]
+}

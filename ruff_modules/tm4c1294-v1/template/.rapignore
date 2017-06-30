@@ -1,0 +1,12 @@
+# See https://github.com/isaacs/node-glob
+
+node_modules/**
+
+test/**
+
+*.md
+*.tar
+*.zip
+*.bin
+
+.*

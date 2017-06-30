@@ -1,0 +1,21 @@
+{
+    "name": "tb6612fng",
+    "version": "1.3.2",
+    "description": "Two-way DC motor controller ",
+    "author": "Young",
+    "main": "src/index.js",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/young-mu/ruff-drivers/tree/master/tb6612fng"
+    },
+    "bugs": {
+        "url": "https://github.com/young-mu/ruff-drivers/tree/master/tb6612fng/issues"
+    },
+    "homepage": "https://github.com/young-mu/ruff-drivers/tree/master/tb6612fng",
+    "keywords": [
+        "DC Motor",
+        "TB6612FNG",
+        "PWM"
+    ]
+}

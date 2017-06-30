@@ -1,0 +1,22 @@
+{
+    "models": [
+        "MG513-30"
+    ],
+    "args": {
+        "ppr": 390
+    },
+    "inputs": {
+        "vcc": {
+            "type": "power",
+            "args": {
+                "voltage": "5v"
+            }
+        },
+        "gnd": {
+            "type": "ground"
+        },
+        "qei": {
+            "type": "qei"
+        }
+    }
+}
